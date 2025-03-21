@@ -87,3 +87,13 @@
 #seconds::after {
     content: 'seconds';
 }
+
+.date {
+    margin-top: -15px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+#date::after {
+    content: ',';
+}
