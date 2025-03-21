@@ -70,6 +70,7 @@
 .clock span::after{
     font-size: 16px;
     position: absolute;
+    bottom: -20px;
     left: 55%;
     transform: translateX(-50%);
 }
