@@ -9,3 +9,13 @@ setInterval(()=>{
     minutes.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
     seconds.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
 }, 1000)
+
+let month = document.getElementById("month");
+let date = document.getElementById("date");
+let year = document.getElementById("year");
+
+let currentDate = new Date();
+
+month.innerHTML = currentDate.toLocaleString('default', { month: 'long' });
+date.innerHTML = currentDate.getDate();
+year.innerHTML = currentDate.getFullYear();
